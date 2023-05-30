@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Rdr2font;
+    src: url(/assets/CHINESER.TTF);
+}
+*{padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.main-width{
+    background-color: rgba(39, 39, 39, 0.534);
+    width: 1400px;
+    height: 30%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.Navigation {
+    background-size: cover;
+    height: 120vh; /* Adjust the height to your desired value */
+    background-image: url(/assets/img1.jpg);
+    position: relative;
+    margin-top: -90px; /* Adjust the margin-top value as needed */
+  }
+  
+.logo1{
+    background-color: transparent;
+    width: 300px;
+    height: 280px;
+}
+.logo{
+    display: block;
+}
+.logo{
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    transition:transform.75s;
+}
+.logo1:hover .logo{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.Navigation header .logo a{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Navigation header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 55px 30px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{border-bottom: 2px solid #ffffff;}
+
+.Trailer{
+    height: 100%;
+    width: 100%;
+    color: rgb(178, 14, 14);
+    background-color: black;
+    text-align: center;
+    align-items: center;
+}
+.para1{
+    margin: 0 auto;
+    text-align: justify;
+    padding: 2%;
+    color: #d2d2d2;
+    height: 100%;
+    width: 100%;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+}
+.Trailer video{
+    border: rgb(178, 14, 14) solid 5px;
+    height: 80%;
+    width: 80%;
+}
+.Trailer h2{
+    font-family: Rdr2font;
+    margin: 4%;
+    font-size: 55px;
+}
+.footerbox{
+    margin-top: 5%;
+    background-color: rgb(178, 14, 14);
+    width: 100%;
+}
+.logo2{
+padding:10px;}

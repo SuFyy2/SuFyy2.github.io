@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Rdr2font;
+    src: url(CHINESER.TTF);
+}
+*{padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.Navigation {
+    background-size: cover;
+    height: 30vh; /* Adjust the height to your desired value */
+    position: relative;
+    margin-top: -90px; /* Adjust the margin-top value as needed */
+  }
+  
+.logo1{
+    background-color: transparent;
+    width: 300px;
+    height: 280px;
+}
+.logo{
+    display: block;
+}
+.logo{
+    position: absolute;
+    left: 3%;
+    top: 30%;
+    transition:transform.75s;
+}
+.logo1:hover .logo{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.Navigation header .logo a{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Navigation header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 30px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{border-bottom: 2px solid #ffffff;}
+.footerbox{
+    margin-top: 5%;
+    background-color: rgb(178, 14, 14);
+    width: 100%;
+}
+.logo2{
+padding:10px;}
+.imageslider {
+    text-align: center;
+  }
+
+  
+.heading {
+    margin: 5%;
+    font-size: x-large;
+    color: rgb(178, 14, 14);
+    font-family: Rdr2font;
+  }
+  
+.bg-content {
+    margin: 3%;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Add this line to vertically center the elements */
+    justify-content: center; /* Add this line to horizontally center the elements */
+    align-items: center;
+  }
+.lefticon{
+    border-radius: 100%;/* Adjust radius of border to make a circle */
+    background-color: #ffffff;
+    height: 70px;
+    width: 70px;
+    margin: 5%;
+}
+
+.imagebox {
+    color: #ffffff;
+    height: 450px;
+    width: 800px;
+    background-color: rgb(0, 0, 0);
+  }
+/* positioning the "page-ind" to the bottom of "imagebox" */
+.imagebox {
+    position: relative; /* Add this line to enable positioning */
+  }
+
+/* Now to add image to the "imagebox" */
+.slide{
+    height: 450px;
+    width: 800px;
+    margin: 0 40px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+.imagebox{
+    border-radius: 20px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden; /* Add this line to disable vertical scroll */
+}
+.slide img{
+    border-radius: 20px;
+}
+/* Adding animation to right and left icon*/
+.left-arrow{
+    transition:transform.75s;
+}
+.lefticon:hover .left-arrow{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.right-arrow{
+    transition:transform.75s;
+}
+.lefticon:hover .right-arrow{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+/* Styling the "text" section of the page*/
+.text{
+    height: 800px;
+    width: 1200px;
+    text-align: center;
+    margin:3%;
+    display: flex;
+}
+  
+  
+  
+/* editing the first context */
+.para{
+    margin: 3%;
+    text-align: center;
+    color: white;
+    width: 500px;
+    height: 200px;
+    }
+.para p{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: justify;
+}
+
