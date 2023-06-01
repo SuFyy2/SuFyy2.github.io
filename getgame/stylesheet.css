@@ -1,25 +1,36 @@
 @font-face {
     font-family: Rdr2font;
-    src: url(CHINESER.TTF);
+    src: url(/assets/CHINESER.TTF);
 }
 *{padding: 0%;
 margin: 0%;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;}
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 .main-width{
     width: 1400px;
-    max-width: 95%;
+    max-width: 105%;
     margin: 0 auto;
+}
+/* To make my nav bar (header) always visible*/
+.main-width{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 6px rgb(178, 14, 14) solid;
 }
 .Navigation {
     background-size: cover;
     height: 30vh; /* Adjust the height to your desired value */
     position: relative;
-    margin-top: -90px; /* Adjust the margin-top value as needed */
+    margin-top: -14.7%; /* Adjust the margin-top value as needed */
   }
   
 .logo1{
@@ -32,8 +43,8 @@ body{
 }
 .logo{
     position: absolute;
-    left: 3%;
-    top: 30%;
+    left: 4%;
+    top: -55%;
     transition:transform.75s;
 }
 .logo1:hover .logo{
@@ -50,7 +61,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0 30px;
+    padding: 15px 0px 30px;
+    margin-top: -8%;
+    margin-right: 5%;
 
 }
 nav ul li{
@@ -60,7 +73,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
@@ -68,14 +81,96 @@ nav ul li a{
     transition: .4s;
 }
 nav ul li:not(:last-child) a:hover,
-nav ul li:not(:last-child) a:focus{border-bottom: 2px solid #ffffff;}
-
-
+nav ul li:not(:last-child) a:focus{border-bottom: 2px solid rgb(178, 14, 14);}
 
 .footerbox{
+    color: white;
+    display: flex;
     margin-top: 5%;
     background-color: rgb(178, 14, 14);
     width: 100%;
 }
+.footertag{
+    display: flex;
+}
+.content-reffered{
+    width: 500px;
+    padding-left: 1%;
+    padding-top: 9%;
+}
+.content-reffered a{
+    color: white;
+}
 .logo2{
 padding:10px;}
+/* editing the "get-game-box" */
+.get-game-box{
+    text-align: center;
+    margin-top: 15%;
+    justify-content: center;
+
+}
+.get-game-box h1{
+    font-family: Rdr2font;
+    font-size: 60px;
+    margin-bottom: 3%;
+
+}
+.download-area{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    height: 500px;
+}
+.download-area img{
+    padding-top: 4%;
+}
+.download-button {
+    transition:transform.75s;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(178, 14, 14);
+    height: 50px;
+    width: 300px;
+    margin: 3% auto; /* This centers the button horizontally */
+}
+.download-button h4{
+    font-size: 30px;
+    font-family: Rdr2font;
+
+}
+.download-button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* downlaod button hover effect */
+.btn-hover:hover .download-button{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+/* youtube trailer video*/
+.youtube{
+    text-align: center;
+    align-items: center;
+    background-color: black;
+}
+.yt-video-bg h1{
+    padding-top: 5%;
+    font-size: 60px;
+    font-family: Rdr2font;
+    color: white;
+}
+.yt-video{
+    height: 500px;
+
+}
+.yt-video h4{
+    padding-top: 5%;
+    color: rgb(178, 14, 14);
+    font-size: 30px;
+    font-family: Rdr2font;
+    padding-bottom: 2%;
+
+}

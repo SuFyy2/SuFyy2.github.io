@@ -1,25 +1,36 @@
 @font-face {
     font-family: Rdr2font;
-    src: url(CHINESER.TTF);
+    src: url(/assets/CHINESER.TTF);
 }
 *{padding: 0%;
 margin: 0%;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;}
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
 }
 .main-width{
     width: 1400px;
-    max-width: 95%;
+    max-width: 105%;
     margin: 0 auto;
+}
+/* To make my nav bar (header) always visible*/
+.main-width{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 6px rgb(178, 14, 14) solid;
 }
 .Navigation {
     background-size: cover;
     height: 30vh; /* Adjust the height to your desired value */
     position: relative;
-    margin-top: -90px; /* Adjust the margin-top value as needed */
+    margin-top: -14.7%; /* Adjust the margin-top value as needed */
   }
   
 .logo1{
@@ -32,8 +43,8 @@ body{
 }
 .logo{
     position: absolute;
-    left: 3%;
-    top: 30%;
+    left: 4%;
+    top: -55%;
     transition:transform.75s;
 }
 .logo1:hover .logo{
@@ -50,7 +61,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0 30px;
+    padding: 15px 0px 30px;
+    margin-top: -8%;
+    margin-right: 5%;
 
 }
 nav ul li{
@@ -60,22 +73,77 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: .4s;
 }
+/* underline and hover effects*/
 nav ul li:not(:last-child) a:hover,
-nav ul li:not(:last-child) a:focus{border-bottom: 2px solid #ffffff;}
-
-
+nav ul li:not(:last-child) a:focus{border-bottom: 2px solid rgb(178, 14, 14);}
 
 .footerbox{
+    color: white;
+    display: flex;
     margin-top: 5%;
     background-color: rgb(178, 14, 14);
     width: 100%;
 }
+.footertag{
+    display: flex;
+}
+.content-reffered{
+    width: 500px;
+    padding-left: 1%;
+    padding-top: 9%;
+}
+.content-reffered a{
+    color: white;
+}
 .logo2{
 padding:10px;}
+
+/* Styling the second section of the code*/
+.review-bg{
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)e;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    color:rgb(178, 14, 14) ;
+    font-size: 60px;
+    font-family: Rdr2font;
+    margin-top: 14%;
+}
+.heading p{
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    text-align: justify;
+}
+/* review designing */
+.review{ 
+    text-align: justify;
+    margin: 5%;}
+.review a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-family: Rdr2font;
+}
+.review h4{
+    margin-bottom: 3%;
+}
+.review h4:not(:last-child) a:hover,
+.review h4:not(:last-child) a:focus{border-bottom: 3px solid rgb(178, 14, 14);}
+.review img{
+    align-items: center;
+    margin-bottom: 2%;
+
+}
